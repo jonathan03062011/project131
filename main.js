@@ -10,3 +10,9 @@ function tv()
     {
         window.location="tv.html";
     }
+
+
+    function back()
+    {
+        window.location="index.html";
+    }
