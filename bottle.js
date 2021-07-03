@@ -3,7 +3,7 @@ status="";
 objects=[];
 function preload()
 {
- img=loadImage("dog_cat.jpg");
+ img=loadImage("bottle.jpg");
 }
 
 function setup()
@@ -16,7 +16,7 @@ function setup()
  
  //intialize the cocossd model
  objectDetector=ml5.objectDetector('cocossd',modelLoaded);
- document.getElementById("status").innerHTML="Status: Detecting Object";
+ document.getElementById("b").innerHTML="Status: Detecting Object";
 }
 
 function modelLoaded()
@@ -47,8 +47,8 @@ function draw()
    g=random(255);
    b=random(255);
   objectDetector.detect(video,gotresults);
-  document.getElementById("status").innerHTML="Objects Detected";
-  document.getElementById("number_of_objects").innerHTML="Number of objects Detected are "+objects.length;
+  document.getElementById("b").innerHTML="Objects Detected";
+  document.getElementById("b").innerHTML="Number of objects Detected are "+objects.length;
   for(i=0;i<objects.length;i++)
   {
     percent=floor(objects[i].confidence*100);

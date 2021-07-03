@@ -3,7 +3,7 @@ function bedroom(){
 }
 
 function bottel(){
-    window.location="bottels.html";
+    window.location="bottel.html";
 }
 
 function tv()
@@ -14,5 +14,5 @@ function tv()
 
     function back()
     {
-        window.location="index.html";
+        window.location="index.html"
     }
